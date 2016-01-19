@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>DigiCare - MAincare</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+  </head>
+  <body>
+<img id="lard" src="images/bl.jpg" alt=""><br/>
+    <button onclick="clearC();">clear</button>
+    <button id="repere" onclick="drawContour();">Contour</button>
+    <hr>
+    <div id="etape1" style="display=none">
+      <h1>1 - Selectionner les coins du repere</h1>
+      <img src="images/bl.jpg" alt=""><br/>
+    </div>
+
+    <div id="etape2" style="display=none">
+      <h1>2 - Dessinez le contour de la plaie</h1>
+    </div>
+    
+    <ul id="menu_edit_repere">
+      <li><button onclick="clearRepere();">Corriger</button></li>
+      <li><button onclick="saveRepere();">Valider</button></li>
+    </ul>
+
+    <ul id="menu_edit_contour">
+      <li><button onclick="modifContour();">Contour</button></li>
+      <li><button onclick="preview();">Appercu</button></li>
+      <li><button onclick="clearC();">Effacer</button></li>
+      <li><button onclick="saveContour();">Valider</button></li>
+    </ul>
+
+    <div id="canvasDiv">
+    </div>
+   <div id="coord">
+  <footer>
+    <div class="copyright">
+        <p>Sandwich class camp 2015 - Deuxieme edition
+    ETNA (Ecole des Technologies Numeriques Appliquees)</p>
+
+        </div>
+  </footer>
+      
+    </div>
+    <script type="text/javascript" src="behaviour.js"></script>
+  </body>
+</html>
